@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://afstudiox.github.io/dogs/",
+  "homepage": "https://afstudiox.github.io/dogs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
