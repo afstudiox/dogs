@@ -7,8 +7,9 @@ import { UserContext } from '../../userContext';
 
 const PhotoContent = ({ data }) => {
   const user = React.useContext(UserContext);
+  console.log(user);
   const { photo, comments } = data;
-  console.log(data);
+  console.log(photo);
 
   return (
     <div className={styles.photo}>
