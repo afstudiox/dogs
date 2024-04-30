@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -13,7 +13,7 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <UserStorage>
           <Header />
           <Routes>
@@ -30,7 +30,7 @@ const App = () => {
           </Routes>
           <Footer />
         </UserStorage>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
