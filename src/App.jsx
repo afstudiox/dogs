@@ -13,7 +13,7 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/dogs">
         <UserStorage>
           <Header />
           <Routes>

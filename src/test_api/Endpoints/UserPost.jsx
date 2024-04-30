@@ -14,14 +14,9 @@ const UserPost = () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ username, email, password }),
-    })
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
-      .then((json) => {
-        console.log(json);
-      });
+    }).then((response) => {
+      return response.json();
+    });
   }
 
   return (

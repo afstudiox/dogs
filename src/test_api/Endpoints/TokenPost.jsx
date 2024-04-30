@@ -16,12 +16,10 @@ const TokenPost = () => {
       body: JSON.stringify({ username, password }),
     })
       .then((response) => {
-        console.log(response);
         return response.json();
       })
       .then((json) => {
         setToken(json.token);
-        console.log(json);
       });
   }
 
